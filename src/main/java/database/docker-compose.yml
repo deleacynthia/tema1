@@ -1,0 +1,9 @@
+version: '3'
+services:
+  sql:
+    image: mysql:8.0.32
+    container_name: sql-demo-clodschool
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=topsecretpassword
